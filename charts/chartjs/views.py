@@ -15,7 +15,7 @@ class HomeView(View):
 
 
 data = []
-df = pd.read_csv('chartjs/data/worddata.csv')
+df = pd.read_csv('chartjs/data/hotel_review.csv')
 for index, review in df.iterrows():
     temp_dict = {}
     temp_dict['text'] = review['text']
